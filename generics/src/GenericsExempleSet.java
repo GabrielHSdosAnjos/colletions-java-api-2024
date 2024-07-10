@@ -2,8 +2,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class GenericsExempleSet {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		// Exemplo sem Generics
+		@SuppressWarnings("rawtypes")
 		Set conjuntoSemGenerics = new HashSet();
 		conjuntoSemGenerics.add("Elemento 1");
 		conjuntoSemGenerics.add(10); // Permite adicionar qualquer tipo de objeto
